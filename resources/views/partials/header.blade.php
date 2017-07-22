@@ -8,7 +8,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="#">Brand</a>
+      <a class="navbar-brand" href="{{ route('product.index')}}">Brand</a>
     </div>
 
       <ul class="nav navbar-nav navbar-right">
@@ -18,7 +18,7 @@
           <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-user" aria-hidden="true"></i>
 User Account<span class="caret"></span></a>
           <ul class="dropdown-menu">
-            <li><a href="#">SignUp</a></li>
+            <li><a href="{{ route('user.signup')}}">SignUp</a></li>
             <li><a href="#">SignIn</a></li>
             <li role="separator" class="divider"></li>
             <li><a href="#">Logout</a></li>

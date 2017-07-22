@@ -13,7 +13,17 @@
 
 Route::get('/',[
 	'uses' => 'ProductController@index',
-	'as' => 'Product.index'
+	'as' => 'product.index'
+]);
+
+Route::get('/signup',[
+	'uses' => 'UserController@signup',
+	'as' => 'user.signup'
+]);
+
+Route::post('/signup',[
+	'uses' => 'UserController@postSignup',
+	'as' => 'user.signup'
 ]);
 
 /*
