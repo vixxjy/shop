@@ -1,7 +1,7 @@
 @extends('layouts.master')
 
 @section('title')
-	laravel shopping cart
+	Shopping cart
 @endsection
 
 @section('content')
@@ -18,7 +18,7 @@
 		        	<div class="pull-left price">
 		        		#{{ $product->price }}.00
 		        	</div>
-		        <a href="#" class="btn btn-success pull-right" role="button">Add to Cart</a>
+		        <a href="{{ route('product.addToCart', ['id' => $product->id]) }}" class="btn btn-success pull-right" role="button">Add to Cart</a>
 		        </div>
 		      </div>
 		    </div>
